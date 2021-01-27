@@ -1,0 +1,9 @@
+1. Write code where the ESP detects a current.
+2. Using the above, write code that prints "Touch Detected" into the Serial Monitor.
+3. Using above, code for lighting up an LED so when touch is detected, the LED is on.
+4. Add pump and transistor to circuit.  Code to power pump briefly when current is detected and LED is on.
+5. Get it to work with dispensing a liquid.
+6. Tidy up physical design.
+7. Design 3D case to size
+8. Print
+
