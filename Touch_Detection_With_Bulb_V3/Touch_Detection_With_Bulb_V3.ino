@@ -14,18 +14,19 @@ void setup()
 
 void loop() 
 {
-  if ((touchRead(T5)) < 60) {
+  if ((touchRead(T5)) < 40) {
     Serial.print(touchRead(T5));
     Serial.println(" - Touch Detected"); // if T5 drops below 60, print "Touch Detected" and the value
-    delay(2500); // pause after detection so user can move hand away from door handle
+    delay(2500); // pause after detection so user can move hand away
     digitalWrite(led, HIGH); // power LED and pump on GPIO 32
     delay(1000); // power pump and LED for 1sec
   }
                             
-  if ((touchRead(T5)) >= 60) {
+  if ((touchRead(T5)) >= 40) {
     Serial.println(touchRead(T5)); // if T5 is = or > 60, keep printing value of T5
+    delay(1000);
     digitalWrite(led, LOW); // do not power LED or pump on GPIO 32
   }
 
-  delay(750);
+  delay(200);
 }
